@@ -14,10 +14,10 @@ Stumptown Labs uses rolling tags for its Docker container images. To understand 
 3-debian-9, 3.4.6-debian-9-r24, 3, 3.4.6, 3.4.6-r24, latest
 ```
 
-⋅⋅* The latest tag always points to the latest revision of the Redmine image.
-⋅⋅* The 3 tag is a rolling tag that always points to the latest revision of Redmine 3.x.
-⋅⋅* The 3.4.6 tag is a rolling tag that points to the latest revision of Redmine 3.4.6. It will be updated with different revisions or daily releases but only for Redmine 3.4.6.
-⋅⋅*The 3-debian-9 and 3-ol-7 tags point to the latest revision of Redmine 3.x for Debian 9 and Oracle Linux 7 respectively.
+- The latest tag always points to the latest revision of the Redmine image.
+- The 3 tag is a rolling tag that always points to the latest revision of Redmine 3.x.
+- The 3.4.6 tag is a rolling tag that points to the latest revision of Redmine 3.4.6. It will be updated with different revisions or daily releases but only for Redmine 3.4.6.
+- The 3-debian-9 and 3-ol-7 tags point to the latest revision of Redmine 3.x for Debian 9 and Oracle Linux 7 respectively.
 
 When Stumptown Labs revises container images, typically to upgrade system packages, fix bugs or improve system configuration, it also updates the container tags to point to the latest revision of the image. Therefore, the rolling tags shown above are dynamic; they will always point to the latest revision or daily release for the corresponding image.
 
@@ -33,12 +33,12 @@ What if you depend on a specific revision of an image? For these scenarios, Stum
 
 Which tag should you use and when? Follow these guidelines:
 
-⋅⋅* If you are using containers in a production environment (such as Kubernetes), Stumptown Labs recommends using immutable tags. This ensures that your deployment is not affected if a new revision inadvertently breaks existing functionality.
+- If you are using containers in a production environment (such as Kubernetes), Stumptown Labs recommends using immutable tags. This ensures that your deployment is not affected if a new revision inadvertently breaks existing functionality.
 
-⋅⋅* If you are using containers for development, Stumptown Labs suggests using rolling tags. This ensures that you are always using the latest version. Rolling tags also make it easier to use a specific version of a development tool.
+-If you are using containers for development, Stumptown Labs suggests using rolling tags. This ensures that you are always using the latest version. Rolling tags also make it easier to use a specific version of a development tool.
 
 ## Useful Links
 To learn more, consider visiting the following links:
 
-⋅⋅* [Docker tagging command reference](https://docs.docker.com/engine/reference/commandline/tag/)
-⋅⋅* [Docker tagging best practices](https://docs.docker.com/develop/dev-best-practices/#how-to-keep-your-images-small)
+- [Docker tagging command reference](https://docs.docker.com/engine/reference/commandline/tag/)
+- [Docker tagging best practices](https://docs.docker.com/develop/dev-best-practices/#how-to-keep-your-images-small)
