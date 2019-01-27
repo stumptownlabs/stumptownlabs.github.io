@@ -35,7 +35,7 @@ Which tag should you use and when? Follow these guidelines:
 
 - If you are using containers in a production environment (such as Kubernetes), Stumptown Labs recommends using immutable tags. This ensures that your deployment is not affected if a new revision inadvertently breaks existing functionality.
 
--If you are using containers for development, Stumptown Labs suggests using rolling tags. This ensures that you are always using the latest version. Rolling tags also make it easier to use a specific version of a development tool.
+- If you are using containers for development, Stumptown Labs suggests using rolling tags. This ensures that you are always using the latest version. Rolling tags also make it easier to use a specific version of a development tool.
 
 ## Useful Links
 To learn more, consider visiting the following links:
